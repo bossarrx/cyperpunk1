@@ -17,16 +17,16 @@
   font-display: swap;
 }
 :root {
-  --primary-text-color:#000;
+  --primary-text-color: #000;
   --secondary-text-color: #777;
-  --text-blue:#52bedc;
+  --text-blue: #52bedc;
   --text-white: #fff;
-  --text-yellow:#f8f200;
-  --bg-yellow:#f8f200;
-  --bg-black:#000;
-  --mobile:320px;
-  --tablet:1024px;
-  --desctop:1920px;
+  --text-yellow: #f8f200;
+  --bg-yellow: #f8f200;
+  --bg-black: #000;
+  --mobile: 320px;
+  --tablet: 1024px;
+  --desctop: 1920px;
 }
 
 * {
@@ -43,6 +43,14 @@ body {
 .container {
   padding: 0 12px;
   margin: 0 auto;
+  max-width: 1920px;
+  width: 90%;
+}
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 120px;
+    width: 80%;
+  }
 }
 
 .header {
@@ -55,6 +63,23 @@ body {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
+}
+@media (min-width: 400px) {
+  .header {
+    background-image: url(./images/11.jpg);
+    min-height: 1000px;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    background-image: url(./images/12.jpg);
+    min-height: 1000px;
+  }
+}
+@media (min-width: 1920px) {
+  .header {
+    align-items: center;
+  }
 }
 
 .nav {
@@ -72,6 +97,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 380px;
+}
+@media (min-width: 500px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.nav__img {
+  width: 200px;
+}
+@media (min-width: 1024px) {
+  .nav__img {
+    width: 296px;
+  }
 }
 
 .square {
@@ -92,6 +132,12 @@ body {
   color: #000;
   margin-bottom: 25px;
 }
+@media (min-width: 780px) {
+  .square_title {
+    font-size: 62px;
+    max-width: 624px;
+  }
+}
 .square_btn {
   background: none;
   padding: 10px 50px;
@@ -104,6 +150,35 @@ body {
   cursor: pointer;
   transition: opacity, 0.5s;
 }
+@media (min-width: 780px) {
+  .square_btn {
+    font-size: 24px;
+    padding: 20px 50px;
+  }
+}
 .square_btn:hover {
   opacity: 0.8;
+}
+@media (min-width: 500px) {
+  .square {
+    margin-top: 0;
+    margin-right: 35px;
+  }
+}
+@media (min-width: 1024px) {
+  .square {
+    margin-right: 320px;
+    padding: 70px;
+  }
+}
+
+.nav_icon img {
+  width: 25px;
+  height: 25px;
+}
+@media (min-width: 1024px) {
+  .nav_icon img {
+    width: 30px;
+    height: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
