@@ -54,6 +54,7 @@ body {
 }
 
 .header {
+  margin-bottom: 120px;
   background-image: url(./images/11.jpg);
   background-position: center;
   background-size: cover;
@@ -181,4 +182,67 @@ body {
     width: 30px;
     height: 30px;
   }
+}
+
+.about__tittle {
+  font-family: "Archangelsk";
+  font-weight: 400;
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .about__tittle {
+    font-size: 62px;
+    width: 620px;
+  }
+}
+@media (min-width: 1024px) {
+  .about__tittle {
+    width: 980px;
+  }
+}
+.about__desc {
+  font-size: 16px;
+  line-height: 200%;
+  font-weight: 400;
+  color: #777;
+  margin-bottom: 70px;
+}
+@media (min-width: 768px) {
+  .about__desc {
+    font-size: 18px;
+    width: 790px;
+  }
+}
+@media (min-width: 1024px) {
+  .about__desc {
+    width: 980px;
+  }
+}
+
+.blue {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 200%;
+  color: #52bedc;
+}
+
+@media (min-width: 500px) {
+  .images {
+    display: grid;
+    max-width: 1250px;
+    margin: 0 auto;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+    padding: 0 36px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "a b" "c c";
+  }
+}
+.images img {
+  margin-bottom: 32px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
