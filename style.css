@@ -283,6 +283,7 @@ body {
 .form-images {
   align-items: center;
   justify-content: space-between;
+  margin-top: 50px;
 }
 .form-images-one {
   background-image: url(./images/play.png);
@@ -409,4 +410,9 @@ body {
 
 .from-fields {
   padding-bottom: 70px;
+}
+
+.aksia {
+  margin-left: 14px;
+  margin-top: 6px;
 }/*# sourceMappingURL=style.css.map */
