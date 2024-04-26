@@ -532,3 +532,248 @@ body {
     margin-top: 160px;
   }
 }
+.deep{
+  background-color: #f8f200;
+
+}
+
+.dispay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__icons{
+    margin-top: 25px;
+    margin-bottom: 40px;
+    display: flex;
+  
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+
+    & img:nth-child(1){
+       width: 44px;
+       height: 44px;
+      }
+      & img:nth-child(2){
+        width: 50px;
+        height: 11px;
+       }
+
+       & img:nth-child(3){
+        width: 176px;
+        height: 44px;
+       }
+
+
+  }
+  &__title{
+    font-weight: 400;
+    font-size: 30px;
+    color: #000;
+    font-family: "Archangelsk";
+    margin-bottom: 25px;
+    @media (min-width:780px) {
+      font-size: 62px;
+      
+    }
+  }
+
+  &__deck{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000;
+    margin-bottom: 25px;
+  }
+}
+.deep__about{
+  padding-left: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 40px;
+
+  @media (min-width:780px) {
+    font-size: 18px;
+    
+  }
+  &__deck{
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    position: relative;
+    &::before{
+      position: absolute;
+      top: 50%;
+      left: -10%;
+      transform: translate(-50%, -50%);
+      content: "";
+      display: block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+ 
+.corol::before{ 
+  background-image: url(./images/color.svg);
+  width: 18px;
+  height: 18px;
+}
+.pics::before{
+  background-image: url(./images/zvezda.svg);
+  width: 22px;
+  height: 22px;
+}
+
+.fps::before{
+  background-image:url(./images/copy.svg);
+  width: 20px;
+  height: 20px
+}
+
+
+
+
+.deep__btn{
+  border: none;
+  padding: 20px 50px;
+  background-color:#000;
+  font-weight: 700;
+  font-size: 16px;
+  color: #f8f200;
+  cursor: pointer;
+  transition: opacity, 0.8s;
+  border-radius: 15px 15px 20px 20px;
+
+  &:hover{
+    opacity: 0.8s;
+  }
+}
+
+.display__wrapper{
+  @media (min-width:780px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 32px;
+    
+  }
+
+  @media (min-width:1024px) {
+    max-width: 1280px;
+    margin: 0 auto;
+    
+  }
+}
+
+.dispay__icons{
+  @media (min-widt:780px) {
+    flex-direction: column;
+    gap: 25px;
+    
+  }
+
+  @media (min-width:1024px) {
+    flex-direction: column;
+    
+    
+  }
+}
+
+.store{
+  background-color:#000;
+  margin-top: 2px;
+}
+.diskstore{
+  max-width: auto;
+}
+.store__about{
+  font-family: var(--second-family);
+color: #fff;
+font-weight: 400;
+font-size: 30px;
+font-family: "Archangelsk";
+margin-top: 40px;
+margin-left: 12px;
+}
+
+.siniy{
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 20px;
+color: #52bedc;
+margin-top: 25px;
+margin-left: 12px;
+}
+.komplekt{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: #fff;
+margin-top: 20px;
+margin-left: 12px;
+}
+.dispay-gtid{
+  background-color: #000;
+  grid-template-columns: repeat(2,1fr);
+  height: 200px;
+}
+
+.ico{
+  margin-left: 27px;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+.icoo{
+  margin-left: 27px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.license{
+  background-color: #fff;
+}
+.logo{
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 200px;
+  height: 50px;
+  
+}
+.end{
+  background-color: #777;
+       align-items: flex-end;
+       height: 100px;
+}
+.eend{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: #000;
+margin-left: 120px;
+align-items: flex-start;
+padding-top: 15px;
+}
+.ennd{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: #000;
+margin-left: 46px;
+margin-top: 20px;
+}
+.the__end{
+  background-color: #000;
+}
+.tj{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+text-align: center;
+color: #fff;
+height: 25px;
+padding-top: 15px;
+}
