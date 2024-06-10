@@ -552,15 +552,6 @@ body {
   left: -28px;
 }
 
-.form-fields {
-  padding-bottom: 70px;
-}
 
-.form-description {
-  max-width: 460px;
-}
-@media (min-width: 780px) {
-  .form-description {
-    margin-top: 160px;
   }
 }/*# sourceMappingURL=style.css.map */
